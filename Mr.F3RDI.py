@@ -145,7 +145,7 @@ Remember, some systems aren’t cracked by brute force — but by **mindset**.
 
 — Ferdi Birgül
 ''' + color.END
-
+"""
 Thanks for reading,
 Zachary, CRO-THEHACKER - Dev'''
 
