@@ -12,7 +12,7 @@ Mr.F3RDI Cyber Toolkit is your all-in-one offensive security toolkit written in 
 
 🔹 Compatible with **Kali Linux**, **Termux**, and **Windows via WSL**.
 
-🔹 Built with ❤️ by [FERDİ BİRGÜL](https://github.com/ferdib) — a cybersecurity content creator and Red Team enthusiast.
+🔹 Built with ❤️ by [FERDİ BİRGÜL](https://github.com/ferdibrgll) — a cybersecurity content creator and Red Team enthusiast.
 
 
 
