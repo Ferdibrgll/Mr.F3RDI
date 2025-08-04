@@ -1,0 +1,58 @@
+#!/bin/bash
+# Mr.F3RDI tool uninstall script
+# Developed by Ferdi Birgül
+# GitHub: https://github.com/Ferdibrgll
+clear
+echo ""
+
+if [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
+    INSTALL_DIR="$PREFIX/usr/share/doc/Mr.F3RDI"
+    BIN_DIR="$PREFIX/bin/"
+    BASH_PATH="$PREFIX/bin/bash"
+    TERMUX=true
+elif [ "$(uname)" = "Darwin" ]; then
+    INSTALL_DIR="/usr/local/Mr.F3RDI"
+    BIN_DIR="/usr/local/bin/"
+    BASH_PATH="/bin/bash"
+    TERMUX=false
+else
+    INSTALL_DIR="$HOME/.Mr.F3RDI"
+    BIN_DIR="/usr/local/bin/"
+    BASH_PATH="/bin/bash"
+    TERMUX=false
+fi
+
+echo "[✔] Checking directories..."
+
+if [ -d "$INSTALL_DIR" ]; then
+    if [ "$TERMUX" = true ]; then
+        rm -rf "$INSTALL_DIR"
+        rm -f "$BIN_DIR/Mr.F3RDI*"
+    else
+        sudo rm -rf "$INSTALL_DIR"
+        sudo rm -f "$BIN_DIR/Mr.F3RDI*"
+    fi
+    echo "[✔] Removed installation directories."
+else
+    echo "[✘] No installation found to uninstall."
+fi
+
+echo "[✔] Cleaning up old directories..."
+
+# ETC_DIR değişkeni tanımlı değil, istersen aşağıdaki satırları kaldırabilir veya ETC_DIR tanımlayabilirsin
+# Örnek ETC_DIR tanımı:
+# ETC_DIR="/etc"
+
+# Eğer böyle bir klasör kullanmıyorsak bunu tamamen çıkarabiliriz
+# Aşağıdaki satırları kaldırdım çünkü ETC_DIR tanımlı değil:
+# if [ -d "$ETC_DIR/Mr.F3RDI" ]; then
+#     if [ "$TERMUX" = true ]; then
+#         rm -rf "$ETC_DIR/Mr.F3RDI"
+#     else
+#         sudo rm -rf "$ETC_DIR/Mr.F3RDI"
+#     fi
+# fi
+
+echo "[✔] Uninstallation completed successfully!"
+
+clear
