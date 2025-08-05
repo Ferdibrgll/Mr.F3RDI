@@ -121,20 +121,9 @@ computer software or hardware or telecommunications equipment;
 
 mrrobot4 = color.NOTICE + '''
 Hello,
-
-As you may know, Mr. Robot 4.0 marked the end of an era — but for us, it s just the beginning.
-We are upgrading Mr.F3RDI to Python 3.7 and adding a fresh arsenal of modern hacking tools inspired by the series and beyond. This will be the final major update in honor of the show's legacy.
-
-Thank you for all your support throughout the years. The Mr.F3RDI team appreciates every line of code and every person who stood by us.
-
-Want to see whats next?
-Follow us on Instagram for exclusive updates and behind-the-scenes content:
-[ https://instagram.com/ferdibirgull ]
-
-
 Thanks for reading,
-Ferdi Birgül Creator & Lead Developer, Mr.F3RDI Project
-'''
+Ferdi Birgül Creator & Lead Developer, Mr.F3RDI Project"""
+
 Starts Menu Classes
 '''
 def agreement():
