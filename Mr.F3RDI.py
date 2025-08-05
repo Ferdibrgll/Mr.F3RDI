@@ -159,7 +159,7 @@ def agreement():
         if agree in yes:
             config.set('Mr.F3RDI', 'agreement', 'true')
 
-class Mr.F3RDI:
+class MrF3RDI:
     def __init__(self):
         clearScr()
         self.createFolders()
