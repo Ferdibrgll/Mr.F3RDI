@@ -85,14 +85,12 @@ yes = config.get('MrF3RDI', 'yes').split()
 color_random=[color.HEADER,color.IMPORTANT,color.NOTICE,color.OKBLUE,color.OKGREEN,color.WARNING,color.RED,color.END,color.UNDERLINE,color.LOGGING]
 random.shuffle(color_random)
 MrF3RDIlogo = color_random[0] + '''
-                                                                                                                                                            
-░▒▓██████████████▓▒░░▒▓███████▓▒░       ░▒▓████████▓▒░▒▓███████▓▒░░▒▓███████▓▒░░▒▓███████▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░             ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░             ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░       ░▒▓██████▓▒░ ░▒▓███████▓▒░░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░             ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░             ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██▓▒░▒▓█▓▒░      ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░                                                                                                                                                                                                                                                                                                                                                                                                       
+                                                          
+,--.   ,--.        ,------.,----. ,------. ,------.  ,--. 
+|   `.'   |,--.--. |  .---''.-.  ||  .--. '|  .-.  \ |  | 
+|  |'.'|  ||  .--' |  `--,   .' < |  '--'.'|  |  \  :|  | 
+|  |   |  ||  |.--.|  |`   /'-'  ||  |\  \ |  '--'  /|  | 
+`--'   `--'`--''--'`--'    `----' `--' '--'`-------' `--'                                                                                                                                                                                                                                                                                                                                                                                                           
         '''
 MrF3RDIPrompt = "MrF3RDI ~# "
 alreadyInstalled = "Already Installed"
@@ -111,20 +109,8 @@ computer software or hardware or telecommunications equipment;
 
 mrrobot4 = color.NOTICE + '''
 Hello,
-
-As we all know, Mr. Robot 4.0 is comming out - the end of Mr. Robot.
-
-We will update to python3.7 & add all of the new hacking tool of 4.0 later this year
-There will be no more updates after the show is done.
-This is to keep cannon to the show.))
-
-Thank you for all the sourport over the years, the fsociety team thanks you!
-Feel free to join the NEW DISCORD!!!
-Anything Mr. Robot will be on the server!
-
-
-
-Thanks for reading,Lead Developer, Mr.F3RDI Project - Dev'"
+Thanks for reading,
+Ferdi Birgül Creator & Lead Developer, Mr.F3RDI Project"""
 
 Starts Menu Classes
 '''
