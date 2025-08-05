@@ -1,15 +1,16 @@
 #!/usr/bin/env python2
-# 
+# -*- coding: utf-8 -*-
 
-#    .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
+
+ #    .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
  # | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
  # | | ____    ____ | || |  _______     | || |              | || |  _________   | || |    ______    | || |  _______     | || |  ________    | || |     _____    | |
  # | ||_   \  /   _|| || | |_   __ \    | || |              | || | |_   ___  |  | || |   / ____ `.  | || | |_   __ \    | || | |_   ___ `.  | || |    |_   _|   | |
-# #  | |  |   \/   |  | || |   | |__) |   | || |              | || |   | |_  \_|  | || |   `'  __) |  | || |   | |__) |   | || |   | |   `. \ | || |      | |     | |
-#  | |  | |\  /| |  | || |   |  __ /    | || |              | || |   |  _|      | || |   _  |__ '.  | || |   |  __ /    | || |   | |    | | | || |      | |     | |
-#  | | _| |_\/_| |_ | || |  _| |  \ \_  | || |      _       | || |  _| |_       | || |  | \____) |  | || |  _| |  \ \_  | || |  _| |___.' / | || |     _| |_    | |
-#  | ||_____||_____|| || | |____| |___| | || |     (_)      | || | |_____|      | || |   \______.'  | || | |____| |___| | || | |________.'  | || |    |_____|   | |
-#  | |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | |
+ #  | |  |   \/   |  | || |   | |__) |   | || |              | || |   | |_  \_|  | || |   `'  __) |  | || |   | |__) |   | || |   | |   `. \ | || |      | |     | |
+ #  | |  | |\  /| |  | || |   |  __ /    | || |              | || |   |  _|      | || |   _  |__ '.  | || |   |  __ /    | || |   | |    | | | || |      | |     | |
+ #  | | _| |_\/_| |_ | || |  _| |  \ \_  | || |      _       | || |  _| |_       | || |  | \____) |  | || |  _| |  \ \_  | || |  _| |___.' / | || |     _| |_    | |
+ #  | ||_____||_____|| || | |____| |___| | || |     (_)      | || | |_____|      | || |   \______.'  | || | |____| |___| | || | |________.'  | || |    |_____|   | |
+ #  | |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | |
  # | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
  #  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
 #   
@@ -21,7 +22,7 @@
 # ║                               IcoDz - Canejo                             ║
 # ║                             Tool for Hacking                             ║
 # ║                                                                          ║
-# ║                         Author : FERDİ BİRGÜL 🔥                          ║
+# ║                         Author :FERDİ BİRGÜL 🔥                        ║
 # ║                                                                          ║
 # ╚══════════════════════════════════════════════════════════════════════════╝
 
@@ -96,7 +97,7 @@ yes = config.get('Mr.F3RDI', 'yes').split()
 color_random=[color.HEADER,color.IMPORTANT,color.NOTICE,color.OKBLUE,color.OKGREEN,color.WARNING,color.RED,color.END,color.UNDERLINE,color.LOGGING]
 random.shuffle(color_random)
 Mr.F3RDIlogo = color_random[0] + '''
-          __    __      ______ ____  _____  _____ _____ 
+   __    __      ______ ____  _____  _____ _____ 
   |  \/  |      |  ____|___ \|  __ \|  __ \_   _|
   | \  / |_ __  | |__    __) | |__) | |  | || |  
   | |\/| | '__  |  __|  |__ <|  _  /| |  | || |  
@@ -145,13 +146,10 @@ Remember, some systems aren’t cracked by brute force — but by **mindset**.
 
 — Ferdi Birgül
 ''' + color.END
-"""
-Thanks for reading,
-Zachary, CRO-THEHACKER - Dev'''
 
-'''
-Starts Menu Classes
-'''
+"""Starts Menu Classes
+''
+"""
 def agreement():
     while not config.getboolean("Mr.F3RDI", "agreement"):
         clearScr()
@@ -165,11 +163,11 @@ class Mr.F3RDI:
     def __init__(self):
         clearScr()
         self.createFolders()
-        print (Mr.F3RDIlogo + color.RED + '''
-     print(color.RED + '''
+        print Mr.F3RDIlogo + color.RED +"" '''
+     print(color.RED + '''""""
        }--------------{+} Coded By Ferdi Birgül {+}--------------{
        }--------{+}  https://github.com/Ferdibrgll/Mr.F3RDI {+}--------{
-''' + color.END)
+''' + color.END +  """""""""
 
 print('''
        {1}--Information Gathering
@@ -184,7 +182,7 @@ print('''
        {11}-CONTRIBUTORS
        {99}-EXIT
 ''')
-
+""
         choice = raw_input(Mr.F3RDIPrompt)
         clearScr()
         if choice == "1":
@@ -356,8 +354,7 @@ class privateWebHacking:
     88""Yb 88""Yb 88 Yb    dP    db    888888 888888
     88__dP 88__dP 88  Yb  dP    dPYb     88   88__
     88"""  88"Yb  88   YbdP    dP__Yb    88   88""
-    88     88  Yb 88    YP    dP""""Yb   88   888888
-    '''
+    88     88  Yb 88    YP    dP""""Yb   88   888888'''
 
     def __init__(self):
         clearScr()
@@ -406,8 +403,8 @@ class postExploitationMenu:
 
 
 '''
-Information Gathering Tools Classes
-'''
+""Information Gathering Tools Classes
+''
 
 
 class informationGatheringMenu:
@@ -770,8 +767,8 @@ class crips:
 
 
 '''
-Password Attack Tools Classes
-'''
+"Password Attack Tools Classes
+''
 
 
 class passwordAttacksMenu:
@@ -812,7 +809,7 @@ class cupp:
     dP   `" 88   88 88__dP 88__dP
     Yb      Y8   8P 88"""  88"""
      YboodP `YbodP' 88     88
-     '''
+    ""
 
     def __init__(self):
         self.installDir = toolDir + "cupp"
@@ -836,8 +833,8 @@ class cupp:
 
 
 '''
-Wireless Testing Tools Classes
-'''
+"Wireless Testing Tools Classes
+''
 
 
 class wirelessTestingMenu:
@@ -948,8 +945,8 @@ class bluepot:
 
 
 '''
-Exploitation Tools Classes
-'''
+"Exploitation Tools Classes
+''
 
 
 class exploitationToolsMenu:
@@ -958,7 +955,7 @@ class exploitationToolsMenu:
     88__    YbdP  88__dP 88
     88""    dPYb  88"""  88  .o
     888888 dP  Yb 88     88ood8
-    '''
+    '''"""
 
     def __init__(self):
         clearScr()
