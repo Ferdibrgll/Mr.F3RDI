@@ -15,7 +15,9 @@ Mr.F3RDI Cyber Toolkit is your all-in-one offensive security toolkit written in 
 🔹 Built with ❤️ by [FERDİ BİRGÜL](https://github.com/ferdibrgll) — a cybersecurity content creator and Red Team enthusiast.
 
 
-
+  <br>
+<img src=https://media.giphy.com/media/3oEjHWpiVIOGXT5l9m/giphy.gif  align="right" width="100">
+</br>
 ---
 
 ## 🧰 Main Modules
