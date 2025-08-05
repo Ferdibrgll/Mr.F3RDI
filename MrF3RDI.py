@@ -2098,5 +2098,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print(" Finishing up...\n")
         time.sleep(0.25)
-# MrF3RDI.py dosyasının en altına şunu yaz:
-# updated byy Ferdi @2025-08-05
+# MrF3RDI.py
