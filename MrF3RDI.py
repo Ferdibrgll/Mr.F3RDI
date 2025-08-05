@@ -12,7 +12,7 @@
 #                                Greet's To
 #                              IcoDz - Canejo
 #                             Tool For Hacking
-#                             Author : Manisso
+#                             Author : MrF3RDI
 
 '''
 Imports
@@ -85,12 +85,24 @@ yes = config.get('MrF3RDI', 'yes').split()
 color_random=[color.HEADER,color.IMPORTANT,color.NOTICE,color.OKBLUE,color.OKGREEN,color.WARNING,color.RED,color.END,color.UNDERLINE,color.LOGGING]
 random.shuffle(color_random)
 MrF3RDIlogo = color_random[0] + '''
-        d88888b .d8888.  .d88b.   .o88b. d888888b d88888b d888888b db    db
-        88'     88'  YP .8P  Y8. d8P  Y8   `88'   88         88    `8b  d8'
-        88ooo   `8bo.   88    88 8P         88    88ooooo    88     `8bd8'
-        88        `Y8b. 88    88 8b         88    88         88       88
-        88      db   8D `8b  d8' Y8b  d8   .88.   88.        88       88
-        YP      `8888Y'  `Y88P'   `Y88P' Y888888P Y88888P    YP       YP
+                                                                                                                                                            
+MMMMMMMM               MMMMMMMM                            FFFFFFFFFFFFFFFFFFFFFF 333333333333333   RRRRRRRRRRRRRRRRR   DDDDDDDDDDDDD      IIIIIIIIII
+M:::::::M             M:::::::M                            F::::::::::::::::::::F3:::::::::::::::33 R::::::::::::::::R  D::::::::::::DDD   I::::::::I
+M::::::::M           M::::::::M                            F::::::::::::::::::::F3::::::33333::::::3R::::::RRRRRR:::::R D:::::::::::::::DD I::::::::I
+M:::::::::M         M:::::::::M                            FF::::::FFFFFFFFF::::F3333333     3:::::3RR:::::R     R:::::RDDD:::::DDDDD:::::DII::::::II
+M::::::::::M       M::::::::::Mrrrrr   rrrrrrrrr             F:::::F       FFFFFF            3:::::3  R::::R     R:::::R  D:::::D    D:::::D I::::I  
+M:::::::::::M     M:::::::::::Mr::::rrr:::::::::r            F:::::F                         3:::::3  R::::R     R:::::R  D:::::D     D:::::DI::::I  
+M:::::::M::::M   M::::M:::::::Mr:::::::::::::::::r           F::::::FFFFFFFFFF       33333333:::::3   R::::RRRRRR:::::R   D:::::D     D:::::DI::::I  
+M::::::M M::::M M::::M M::::::Mrr::::::rrrrr::::::r          F:::::::::::::::F       3:::::::::::3    R:::::::::::::RR    D:::::D     D:::::DI::::I  
+M::::::M  M::::M::::M  M::::::M r:::::r     r:::::r          F:::::::::::::::F       33333333:::::3   R::::RRRRRR:::::R   D:::::D     D:::::DI::::I  
+M::::::M   M:::::::M   M::::::M r:::::r     rrrrrrr          F::::::FFFFFFFFFF               3:::::3  R::::R     R:::::R  D:::::D     D:::::DI::::I  
+M::::::M    M:::::M    M::::::M r:::::r                      F:::::F                         3:::::3  R::::R     R:::::R  D:::::D     D:::::DI::::I  
+M::::::M     MMMMM     M::::::M r:::::r                      F:::::F                         3:::::3  R::::R     R:::::R  D:::::D    D:::::D I::::I  
+M::::::M               M::::::M r:::::r                    FF:::::::FF           3333333     3:::::3RR:::::R     R:::::RDDD:::::DDDDD:::::DII::::::II
+M::::::M               M::::::M r:::::r             ...... F::::::::FF           3::::::33333::::::3R::::::R     R:::::RD:::::::::::::::DD I::::::::I
+M::::::M               M::::::M r:::::r             .::::. F::::::::FF           3:::::::::::::::33 R::::::R     R:::::RD::::::::::::DDD   I::::::::I
+MMMMMMMM               MMMMMMMM rrrrrrr             ...... FFFFFFFFFFF            333333333333333   RRRRRRRR     RRRRRRRDDDDDDDDDDDDD      IIIIIIIIII
+                                                                                                                                                                                                                                                                                                                                                                                                              
         '''
 MrF3RDIPrompt = "MrF3RDI ~# "
 alreadyInstalled = "Already Installed"
@@ -110,22 +122,21 @@ computer software or hardware or telecommunications equipment;
 mrrobot4 = color.NOTICE + '''
 Hello,
 
-As we all know, Mr. Robot 4.0 is comming out - the end of Mr. Robot.
+As we all know, Mr.F3RDI 3.7 is coming out — the next step in our evolution.
 
-We will update to python3.7 & add all of the new hacking tool of 4.0 later this year
-There will be no more updates after the show is done.
-This is to keep cannon to the show.))
+We will update to python3.7 & add all of the new hacking tools later this year.
+There will be no more updates after this version is finalized.
+This is to keep things sharp, clean, and focused.
 
-Thank you for all the sourport over the years, the MrF3RDI team thanks you!
-Feel free to join the NEW DISCORD!!!
-Anything Mr. Robot will be on the server!
+Thank you for all the support over the years, the Mr.F3RDI team thanks you!
+Feel free to follow on Instagram for news, tips, and behind-the-scenes content:
 
-[ https://discord.gg/xB87X9z ]
+[ https://instagram.com/ferdibirgull]
 
 
 
 Thanks for reading,
-Zachary, CRO-THEHACKER - Dev'''
+Ferdi Birgül — Founder & Lead Developer, Mr.F3RDI Project'''
 
 '''
 Starts Menu Classes
@@ -144,8 +155,8 @@ class MrF3RDI:
         clearScr()
         self.createFolders()
         print (MrF3RDIlogo + color.RED + '''
-       }--------------{+} Coded By Manisso {+}--------------{
-       }--------{+}  GitHub.com/Manisso/MrF3RDI {+}--------{
+       }--------------{+} Coded By MrF3RDI {+}--------------{
+       }--------{+}  GitHub.com/MrF3RDI/MrF3RDI {+}--------{
     ''' + color.END + '''
        {1}--Information Gathering
        {2}--Password Attacks
