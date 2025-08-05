@@ -122,22 +122,22 @@ computer software or hardware or telecommunications equipment;
 mrrobot4 = color.NOTICE + '''
 Hello,
 
-As you may know, Mr. Robot 4.0 marked the end of an era — but for us, it’s just the beginning.
+As we all know, Mr. Robot 4.0 is comming out - the end of Mr. Robot.
 
-We are upgrading Mr.F3RDI to Python 3.7 and adding a fresh arsenal of modern hacking tools inspired by the series and beyond. This will be the final major update in honor of the show's legacy.
+We will update to python3.7 & add all of the new hacking tool of 4.0 later this year
+There will be no more updates after the show is done.
+This is to keep cannon to the show.))
 
-Thank you for all your support throughout the years. The Mr.F3RDI team appreciates every line of code and every person who stood by us.
+Thank you for all the sourport over the years, the MrF3RDI team thanks you!
+Feel free to join the NEW DISCORD!!!
+Anything Mr. Robot will be on the server!
 
-Want to see what’s next?
-Follow us on Instagram for exclusive updates and behind-the-scenes content:
-
-
-[ https://instagram.com/ferdibirgull ]
+[ https://discord.gg/xB87X9z ]
 
 
 
 Thanks for reading,
-Ferdi Birgül – Creator & Lead Developer, Mr.F3RDI Project
+Zachary, MrF3RDI - Dev
 '''
 Starts Menu Classes
 '''
