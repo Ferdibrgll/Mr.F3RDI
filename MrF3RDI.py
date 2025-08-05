@@ -119,22 +119,25 @@ designed to interrupt, destroy or limit the functionality of any
 computer software or hardware or telecommunications equipment;
 ''' + color.END
 
-mrrobot4 = color.NOTICE + '''Thanks for reading,
-Ferdi Birgül — Founder & Lead Developer, Mr.F3RDI Project
+mrrobot4 = color.NOTICE + '''
 Hello,
 
-As we all know, Mr.F3RDI 3.7 is coming out — the next step in our evolution.
+As you may know, Mr. Robot 4.0 marked the end of an era — but for us, it’s just the beginning.
 
-We will update to python3.7 & add all of the new hacking tools later this year.
-There will be no more updates after this version is finalized.
-This is to keep things sharp, clean, and focused.
+We are upgrading Mr.F3RDI to Python 3.7 and adding a fresh arsenal of modern hacking tools inspired by the series and beyond. This will be the final major update in honor of the show's legacy.
 
-Thank you for all the support over the years, the Mr.F3RDI team thanks you!
-Feel free to follow on Instagram for news, tips, and behind-the-scenes content:
+Thank you for all your support throughout the years. The Mr.F3RDI team appreciates every line of code and every person who stood by us.
+
+Want to see what’s next?
+Follow us on Instagram for exclusive updates and behind-the-scenes content:
+
+
+[ https://instagram.com/ferdibirgull ]
+
+
 
 Thanks for reading,
-Ferdi Birgül — Founder & Lead Developer, Mr.F3RDI Project'''
-
+Ferdi Birgül Creator & Lead Developer, Mr.F3RDI Project
 '''
 Starts Menu Classes
 '''
