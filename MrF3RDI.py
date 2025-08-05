@@ -119,7 +119,8 @@ designed to interrupt, destroy or limit the functionality of any
 computer software or hardware or telecommunications equipment;
 ''' + color.END
 
-mrrobot4 = color.NOTICE + '''
+mrrobot4 = color.NOTICE + '''Thanks for reading,
+Ferdi Birgül — Founder & Lead Developer, Mr.F3RDI Project
 Hello,
 
 As we all know, Mr.F3RDI 3.7 is coming out — the next step in our evolution.
@@ -130,10 +131,6 @@ This is to keep things sharp, clean, and focused.
 
 Thank you for all the support over the years, the Mr.F3RDI team thanks you!
 Feel free to follow on Instagram for news, tips, and behind-the-scenes content:
-
-[ https://instagram.com/ferdibirgull]
-
-
 
 Thanks for reading,
 Ferdi Birgül — Founder & Lead Developer, Mr.F3RDI Project'''
