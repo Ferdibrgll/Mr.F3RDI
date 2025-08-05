@@ -77,7 +77,7 @@ Mr.F3RDI Cyber Toolkit is your all-in-one offensive security toolkit written in 
 ### Linux / Termux
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/ferdibrgl/Mr.F3RDI/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/ferdibrgll/Mr.F3RDI/main/install.sh)
 ```
 
 ### Windows (WSL or Cygwin Recommended)
