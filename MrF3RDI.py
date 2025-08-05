@@ -1,30 +1,13 @@
 #!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-
-
- #    .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
- # | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
- # | | ____    ____ | || |  _______     | || |              | || |  _________   | || |    ______    | || |  _______     | || |  ________    | || |     _____    | |
- # | ||_   \  /   _|| || | |_   __ \    | || |              | || | |_   ___  |  | || |   / ____ `.  | || | |_   __ \    | || | |_   ___ `.  | || |    |_   _|   | |
- #  | |  |   \/   |  | || |   | |__) |   | || |              | || |   | |_  \_|  | || |   `'  __) |  | || |   | |__) |   | || |   | |   `. \ | || |      | |     | |
- #  | |  | |\  /| |  | || |   |  __ /    | || |              | || |   |  _|      | || |   _  |__ '.  | || |   |  __ /    | || |   | |    | | | || |      | |     | |
- #  | | _| |_\/_| |_ | || |  _| |  \ \_  | || |      _       | || |  _| |_       | || |  | \____) |  | || |  _| |  \ \_  | || |  _| |___.' / | || |     _| |_    | |
- #  | ||_____||_____|| || | |____| |___| | || |     (_)      | || | |_____|      | || |   \______.'  | || | |____| |___| | || | |________.'  | || |    |_____|   | |
- #  | |              | || |              | || |              | || |              | || |              | || |              | || |              | || |              | |
- # | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
- #  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
-#   
+#  __  __      _____ _____ ____  ____ ___ 
+# |  \/  |_ __|  ___|___ /|  _ \|  _ \_ _|
+# | |\/| | '__| |_    |_ \| |_) | | | | | 
+# | |  | | |  |  _|  ___) |  _ <| |_| | | 
+# |_|  |_|_|  |_|   |____/|_| \_\____/___|
+#                                        
 #
-# ╔══════════════════════════════════════════════════════════════════════════╗
-# ║                              Greet's To                                 ║
-# ╠══════════════════════════════════════════════════════════════════════════╣
-# ║                                                                          ║
-# ║                               IcoDz - Canejo                             ║
-# ║                             Tool for Hacking                             ║
-# ║                                                                          ║
-# ║                         Author :FERDİ BİRGÜL 🔥                        ║
-# ║                                                                          ║
-# ╚══════════════════════════════════════════════════════════════════════════╝
+#                             Tool For Hacking
+#                             Author : MrF3RDI
 
 '''
 Imports
@@ -86,32 +69,30 @@ def yesOrNo():
 Config
 '''
 installDir = os.path.dirname(os.path.abspath(__file__)) + '/'
-configFile = installDir + "/Mr.F3RDI.cfg"
+configFile = installDir + "/MrF3RDI.cfg"
 print(installDir)
 config = ConfigParser.RawConfigParser()
 config.read(configFile)
 
-toolDir = installDir + config.get('Mr.F3RDI', 'toolDir')
-logDir = installDir + config.get('Mr.F3RDI', 'logDir')
-yes = config.get('Mr.F3RDI', 'yes').split()
+toolDir = installDir + config.get('MrF3RDI', 'toolDir')
+logDir = installDir + config.get('MrF3RDI', 'logDir')
+yes = config.get('MrF3RDI', 'yes').split()
 color_random=[color.HEADER,color.IMPORTANT,color.NOTICE,color.OKBLUE,color.OKGREEN,color.WARNING,color.RED,color.END,color.UNDERLINE,color.LOGGING]
 random.shuffle(color_random)
-Mr.F3RDIlogo = color_random[0] + '''
-   __    __      ______ ____  _____  _____ _____ 
-  |  \/  |      |  ____|___ \|  __ \|  __ \_   _|
-  | \  / |_ __  | |__    __) | |__) | |  | || |  
-  | |\/| | '__  |  __|  |__ <|  _  /| |  | || |  
-  | |  | | |_   | |     ___) | | \ \| |__| || |_ 
-  |_|  |_|_ (_) |_|    |____/|_|  \_\_____/_____|
-                                               
-                                               
+MrF3RDIlogo = color_random[0] + '''
+        d88888b .d8888.  .d88b.   .o88b. d888888b d88888b d888888b db    db
+        88'     88'  YP .8P  Y8. d8P  Y8   `88'   88         88    `8b  d8'
+        88ooo   `8bo.   88    88 8P         88    88ooooo    88     `8bd8'
+        88        `Y8b. 88    88 8b         88    88         88       88
+        88      db   8D `8b  d8' Y8b  d8   .88.   88.        88       88
+        YP      `8888Y'  `Y88P'   `Y88P' Y888888P Y88888P    YP       YP
         '''
-Mr.F3RDIPrompt = "Mr.F3RDI ~# "
+MrF3RDIPrompt = "MrF3RDI ~# "
 alreadyInstalled = "Already Installed"
 continuePrompt = "\nClick [Return] to continue"
 
 termsAndConditions = color.NOTICE + '''
-I shall not use Mr.F3RDI to:
+I shall not use MrF3RDI to:
 (i) upload or otherwise transmit, display or distribute any
 content that infringes any trademark, trade secret, copyright
 or other proprietary or intellectual property rights of any
@@ -122,54 +103,45 @@ computer software or hardware or telecommunications equipment;
 ''' + color.END
 
 mrrobot4 = color.NOTICE + '''
-Greetings,
+Hello,
 
-Inspired by the legendary Mr. Robot, this tool is now reborn with the touch of Ferdi Birgül.
+As we all know, Mr. Robot 4.0 is comming out - the end of Mr. Robot.
 
-Upgraded for Python 3 compatibility, expanded with modern cybersecurity tools, and ready to ignite a new era in the shadows of the terminal.
+We will update to python3.7 & add all of the new hacking tool of 4.0 later this year
+There will be no more updates after the show is done.
+This is to keep cannon to the show.))
 
-This project is now:
-- Educational  
-- Up-to-date  
-- And part of a fully independent cybersecurity vision!
+Thank you for all the sourport over the years, the MrF3RDI team thanks you!
+Feel free to join the NEW DISCORD!!!
+Anything Mr. Robot will be on the server!
 
-🔗 In-depth content on YouTube:  
-https://youtube.com/@ferdibirgul
+[ https://discord.gg/xB87X9z ]
 
-📸 Latest tips and announcements:  
-https://instagram.com/ferdibirgull
 
-🌐 New tools, guides, and much more are coming soon!
 
-If you're reading this, you're now part of the journey.  
-Remember, some systems aren’t cracked by brute force — but by **mindset**.
+Thanks for reading,
+Zachary, CRO-THEHACKER - Dev'''
 
-— Ferdi Birgül
-''' + color.END
-
-"""Starts Menu Classes
-''
-"""
+'''
+Starts Menu Classes
+'''
 def agreement():
-    while not config.getboolean("Mr.F3RDI", "agreement"):
+    while not config.getboolean("MrF3RDI", "agreement"):
         clearScr()
         print(termsAndConditions)
         print(mrrobot4)
         agree = raw_input("You must agree to our terms and conditions first (Y/n) ").lower()
         if agree in yes:
-            config.set('Mr.F3RDI', 'agreement', 'true')
+            config.set('MrF3RDI', 'agreement', 'true')
 
 class MrF3RDI:
     def __init__(self):
         clearScr()
         self.createFolders()
-        print Mr.F3RDIlogo + color.RED +"" '''
-     print(color.RED + '''""""
-       }--------------{+} Coded By Ferdi Birgül {+}--------------{
-       }--------{+}  https://github.com/Ferdibrgll/Mr.F3RDI {+}--------{
-''' + color.END +  """""""""
-
-print('''
+        print (MrF3RDIlogo + color.RED + '''
+       }--------------{+} Coded By MrF3RDI {+}--------------{
+       }--------{+}  GitHub.com/MrF3RDI/MrF3RDI {+}--------{
+    ''' + color.END + '''
        {1}--Information Gathering
        {2}--Password Attacks
        {3}--Wireless Testing
@@ -180,10 +152,10 @@ print('''
        {8}--Post Exploitation
        {0}--INSTALL & UPDATE
        {11}-CONTRIBUTORS
-       {99}-EXIT
-''')
-""
-        choice = raw_input(Mr.F3RDIPrompt)
+       {99}-EXIT\n
+     ''')
+
+        choice = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice == "1":
             informationGatheringMenu()
@@ -216,7 +188,9 @@ print('''
                 print(os.system(choice))
             except:
                 pass
-        self.completed()
+
+        self.completed()  # BURASI BURADAN KESİNLİKLE HİZALANMALI
+
 
     def githubContributors(self):
         clearScr()
@@ -226,7 +200,7 @@ print('''
     Yb      Yb   dP 88 Y88   88   88"Yb  88 88""Yb o.`Y8b
      YboodP  YbodP  88  Y8   88   88  Yb 88 88oodP 8bodP'
      ''')
-        contributorsURL = 'https://api.github.com/repos/Mr.F3RDI/Mr.F3RDI/contributors'
+        contributorsURL = 'https://api.github.com/repos/MrF3RDI/MrF3RDI/contributors'
         jsonResponseList = json.loads(urllib2.urlopen(contributorsURL).read())
         for dictionary in jsonResponseList:
             print("   * %s" % dictionary['login'])
@@ -243,9 +217,9 @@ print('''
         self.__init__()
 
     def update(self):
-        os.system("git clone --depth=1 https://github.com/Mr.F3RDI/Mr.F3RDI.git")
-        os.system("cd Mr.F3RDI && bash ./update.sh")
-        os.system("Mr.F3RDI")
+        os.system("git clone --depth=1 https://github.com/MrF3RDI/MrF3RDI.git")
+        os.system("cd MrF3RDI && bash ./update.sh")
+        os.system("MrF3RDI")
 
 
 class sniffingSpoofingMenu:
@@ -266,7 +240,7 @@ class sniffingSpoofingMenu:
             "   {3}--pyPISHER - Tool to create a mallicious website for password pishing")
         print("   {4}--SMTP Mailer - Tool to send SMTP mail\n ")
         print("   {99}-Back To Main Menu \n")
-        choice6 = raw_input(Mr.F3RDIPrompt)
+        choice6 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice6 == "1":
             setoolkit()
@@ -277,7 +251,7 @@ class sniffingSpoofingMenu:
         elif choice6 == "4":
             smtpsend()
         elif choice6 == "99":
-            Mr.F3RDI()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -312,7 +286,7 @@ class webHackingMenu:
             "   {11}-BruteX - Automatically brute force all services running on a target")
         print("   {12}-Arachni - Web Application Security Scanner Framework \n ")
         print("   {99}-Back To Main Menu \n")
-        choiceweb = raw_input(Mr.F3RDIPrompt)
+        choiceweb = raw_input(MrF3RDIPrompt)
         clearScr()
         if choiceweb == "1":
             maine()
@@ -339,7 +313,7 @@ class webHackingMenu:
         elif choiceweb == "12":
             arachni()
         elif choiceweb == "99":
-            Mr.F3RDI()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -354,7 +328,8 @@ class privateWebHacking:
     88""Yb 88""Yb 88 Yb    dP    db    888888 888888
     88__dP 88__dP 88  Yb  dP    dPYb     88   88__
     88"""  88"Yb  88   YbdP    dP__Yb    88   88""
-    88     88  Yb 88    YP    dP""""Yb   88   888888'''
+    88     88  Yb 88    YP    dP""""Yb   88   888888
+    '''
 
     def __init__(self):
         clearScr()
@@ -383,7 +358,7 @@ class postExploitationMenu:
         print("   {2}--POET")
         print("   {3}--Phishing Framework \n")
         print("   {99}-Return to main menu \n ")
-        choice11 = raw_input(Mr.F3RDIPrompt)
+        choice11 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice11 == "1":
             sitechecker()
@@ -392,7 +367,7 @@ class postExploitationMenu:
         elif choice11 == "3":
             weeman()
         elif choice11 == "99":
-            Mr.F3RDI()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -403,8 +378,8 @@ class postExploitationMenu:
 
 
 '''
-""Information Gathering Tools Classes
-''
+Information Gathering Tools Classes
+'''
 
 
 class informationGatheringMenu:
@@ -428,7 +403,7 @@ class informationGatheringMenu:
         print("  {7}--Doork")
         print("  {8}--Crips\n  ")
         print("  {99}-Back To Main Menu \n")
-        choice2 = raw_input(Mr.F3RDIPrompt)
+        choice2 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice2 == "1":
             nmap()
@@ -447,7 +422,7 @@ class informationGatheringMenu:
         elif choice2 == "8":
             crips()
         elif choice2 == "99":
-            Mr.F3RDI()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -743,7 +718,7 @@ class crips:
 
     def __init(self):
         self.installDir = toolDir + "Crips"
-        self.gitRepo = "https://github.com/Mr.F3RDI/Crips.git"
+        self.gitRepo = "https://github.com/MrF3RDI/Crips.git"
 
         if not self.installed():
             self.install()
@@ -767,8 +742,8 @@ class crips:
 
 
 '''
-"Password Attack Tools Classes
-''
+Password Attack Tools Classes
+'''
 
 
 class passwordAttacksMenu:
@@ -793,7 +768,7 @@ class passwordAttacksMenu:
         elif choice3 == "2":
             brutex()
         elif choice3 == "99":
-            Mr.F3RDI()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -809,7 +784,7 @@ class cupp:
     dP   `" 88   88 88__dP 88__dP
     Yb      Y8   8P 88"""  88"""
      YboodP `YbodP' 88     88
-    ""
+     '''
 
     def __init__(self):
         self.installDir = toolDir + "cupp"
@@ -833,8 +808,8 @@ class cupp:
 
 
 '''
-"Wireless Testing Tools Classes
-''
+Wireless Testing Tools Classes
+'''
 
 
 class wirelessTestingMenu:
@@ -852,7 +827,7 @@ class wirelessTestingMenu:
         print("   {2}--pixiewps")
         print("   {3}--Bluetooth Honeypot GUI Framework \n")
         print("   {99}-Back To The Main Menu \n")
-        choice4 = raw_input(Mr.F3RDIPrompt)
+        choice4 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice4 == "1":
             reaver()
@@ -861,7 +836,7 @@ class wirelessTestingMenu:
         elif choice4 == "3":
             bluepot()
         elif choice4 == "99":
-            Mr.F3RDI()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -945,8 +920,8 @@ class bluepot:
 
 
 '''
-"Exploitation Tools Classes
-''
+Exploitation Tools Classes
+'''
 
 
 class exploitationToolsMenu:
@@ -955,7 +930,7 @@ class exploitationToolsMenu:
     88__    YbdP  88__dP 88
     88""    dPYb  88"""  88  .o
     888888 dP  Yb 88     88ood8
-    '''"""
+    '''
 
     def __init__(self):
         clearScr()
@@ -970,7 +945,7 @@ class exploitationToolsMenu:
         print("   {8}--Bruteforce the Android Passcode given the hash and salt")
         print("   {9}--Joomla SQL injection Scanner \n ")
         print("   {99}-Go Back To Main Menu \n")
-        choice5 = raw_input(Mr.F3RDIPrompt)
+        choice5 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice5 == "1":
             atscan()
@@ -991,7 +966,7 @@ class exploitationToolsMenu:
         elif choice5 == "9":
             cmsfew()
         elif choice5 == "99":
-            Mr.F3RDI()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -1060,7 +1035,7 @@ def weeman():
         os.system(
             "git clone --depth=1 https://github.com/samyoyo/weeman.git && cd weeman && python weeman.py")
     else:
-        Mr.F3RDI()
+        MrF3RDI()
 
 
 def gabriel():
@@ -1085,7 +1060,7 @@ def ifinurl():
     if cinurl in yes:
         inurl()
     else:
-        Mr.F3RDI()
+        MrF3RDI()
 
 
 def bsqlbf():
@@ -1104,7 +1079,7 @@ def atscan():
         os.system(
             "git clone --depth=1 https://github.com/AlisamTechnology/ATSCAN.git && cd ATSCAN && perl atscan.pl")
     else:
-        Mr.F3RDI()
+        MrF3RDI()
 
 
 def commix():
@@ -1163,7 +1138,7 @@ def jboss():
         os.system(
             "git clone --depth=1 https://github.com/SpiderLabs/jboss-autopwn.git"), sys.exit()
     else:
-        Mr.F3RDI()
+        MrF3RDI()
 
 
 def wppluginscan():
@@ -1362,7 +1337,7 @@ def pisher():
     os.system("python pisher.py")
 
 
-menuu = Mr.F3RDIlogo + '''
+menuu = MrF3RDIlogo + '''
 
    {1}--Get all websites
    {2}--Get joomla websites
@@ -1395,7 +1370,7 @@ class Fscan:
         self.getSites(False)
         print menuu
         while True:
-            choice = raw_input(Mr.F3RDIPrompt)
+            choice = raw_input(MrF3RDIPrompt)
             if choice == '1':
                 self.getSites(True)
             elif choice == '2':
@@ -1422,7 +1397,7 @@ class Fscan:
             elif choice == '12':
                 self.cloudflareBypasser()
             elif choice == '99':
-                Mr.F3RDI()
+                MrF3RDI()
             con = raw_input(' Continue [Y/n] -> ')
             if con[0].upper() == 'N':
                 exit()
@@ -1850,7 +1825,7 @@ def maine():
         elif choose == "4":
             about()
         elif choose == "99":
-            Mr.F3RDI()
+            MrF3RDI()
         else:
             maine()
 
@@ -2117,7 +2092,9 @@ def wpminiscanner():
 if __name__ == "__main__":
     try:
         agreement()
-        Mr.F3RDI()
+        MrF3RDI()
     except KeyboardInterrupt:
         print(" Finishing up...\n")
         time.sleep(0.25)
+# MrF3RDI.py dosyasının en altına şunu yaz:
+# updated by Ferdi @2025-08-05
