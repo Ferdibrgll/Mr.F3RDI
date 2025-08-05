@@ -74,17 +74,17 @@ def yesOrNo():
 Config
 '''
 installDir = os.path.dirname(os.path.abspath(__file__)) + '/'
-configFile = installDir + "/fsociety.cfg"
+configFile = installDir + "/MrF3RDI.cfg"
 print(installDir)
 config = ConfigParser.RawConfigParser()
 config.read(configFile)
 
-toolDir = installDir + config.get('fsociety', 'toolDir')
-logDir = installDir + config.get('fsociety', 'logDir')
-yes = config.get('fsociety', 'yes').split()
+toolDir = installDir + config.get('MrF3RDI', 'toolDir')
+logDir = installDir + config.get('MrF3RDI', 'logDir')
+yes = config.get('MrF3RDI', 'yes').split()
 color_random=[color.HEADER,color.IMPORTANT,color.NOTICE,color.OKBLUE,color.OKGREEN,color.WARNING,color.RED,color.END,color.UNDERLINE,color.LOGGING]
 random.shuffle(color_random)
-fsocietylogo = color_random[0] + '''
+MrF3RDIlogo = color_random[0] + '''
         d88888b .d8888.  .d88b.   .o88b. d888888b d88888b d888888b db    db
         88'     88'  YP .8P  Y8. d8P  Y8   `88'   88         88    `8b  d8'
         88ooo   `8bo.   88    88 8P         88    88ooooo    88     `8bd8'
@@ -92,12 +92,12 @@ fsocietylogo = color_random[0] + '''
         88      db   8D `8b  d8' Y8b  d8   .88.   88.        88       88
         YP      `8888Y'  `Y88P'   `Y88P' Y888888P Y88888P    YP       YP
         '''
-fsocietyPrompt = "fsociety ~# "
+MrF3RDIPrompt = "MrF3RDI ~# "
 alreadyInstalled = "Already Installed"
 continuePrompt = "\nClick [Return] to continue"
 
 termsAndConditions = color.NOTICE + '''
-I shall not use fsociety to:
+I shall not use MrF3RDI to:
 (i) upload or otherwise transmit, display or distribute any
 content that infringes any trademark, trade secret, copyright
 or other proprietary or intellectual property rights of any
@@ -116,7 +116,7 @@ We will update to python3.7 & add all of the new hacking tool of 4.0 later this 
 There will be no more updates after the show is done.
 This is to keep cannon to the show.))
 
-Thank you for all the sourport over the years, the fsociety team thanks you!
+Thank you for all the sourport over the years, the MrF3RDI team thanks you!
 Feel free to join the NEW DISCORD!!!
 Anything Mr. Robot will be on the server!
 
@@ -131,21 +131,21 @@ Zachary, CRO-THEHACKER - Dev'''
 Starts Menu Classes
 '''
 def agreement():
-    while not config.getboolean("fsociety", "agreement"):
+    while not config.getboolean("MrF3RDI", "agreement"):
         clearScr()
         print(termsAndConditions)
         print(mrrobot4)
         agree = raw_input("You must agree to our terms and conditions first (Y/n) ").lower()
         if agree in yes:
-            config.set('fsociety', 'agreement', 'true')
+            config.set('MrF3RDI', 'agreement', 'true')
 
-class fsociety:
+class MrF3RDI:
     def __init__(self):
         clearScr()
         self.createFolders()
-        print (fsocietylogo + color.RED + '''
+        print (MrF3RDIlogo + color.RED + '''
        }--------------{+} Coded By Manisso {+}--------------{
-       }--------{+}  GitHub.com/Manisso/fsociety {+}--------{
+       }--------{+}  GitHub.com/Manisso/MrF3RDI {+}--------{
     ''' + color.END + '''
        {1}--Information Gathering
        {2}--Password Attacks
@@ -159,7 +159,7 @@ class fsociety:
        {11}-CONTRIBUTORS
        {99}-EXIT\n
      ''')
-        choice = raw_input(fsocietyPrompt)
+        choice = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice == "1":
             informationGatheringMenu()
@@ -202,7 +202,7 @@ class fsociety:
     Yb      Yb   dP 88 Y88   88   88"Yb  88 88""Yb o.`Y8b
      YboodP  YbodP  88  Y8   88   88  Yb 88 88oodP 8bodP'
      ''')
-        contributorsURL = 'https://api.github.com/repos/manisso/fsociety/contributors'
+        contributorsURL = 'https://api.github.com/repos/manisso/MrF3RDI/contributors'
         jsonResponseList = json.loads(urllib2.urlopen(contributorsURL).read())
         for dictionary in jsonResponseList:
             print("   * %s" % dictionary['login'])
@@ -219,9 +219,9 @@ class fsociety:
         self.__init__()
 
     def update(self):
-        os.system("git clone --depth=1 https://github.com/Manisso/fsociety.git")
-        os.system("cd fsociety && bash ./update.sh")
-        os.system("fsociety")
+        os.system("git clone --depth=1 https://github.com/Manisso/MrF3RDI.git")
+        os.system("cd MrF3RDI && bash ./update.sh")
+        os.system("MrF3RDI")
 
 
 class sniffingSpoofingMenu:
@@ -242,7 +242,7 @@ class sniffingSpoofingMenu:
             "   {3}--pyPISHER - Tool to create a mallicious website for password pishing")
         print("   {4}--SMTP Mailer - Tool to send SMTP mail\n ")
         print("   {99}-Back To Main Menu \n")
-        choice6 = raw_input(fsocietyPrompt)
+        choice6 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice6 == "1":
             setoolkit()
@@ -253,7 +253,7 @@ class sniffingSpoofingMenu:
         elif choice6 == "4":
             smtpsend()
         elif choice6 == "99":
-            fsociety()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -288,7 +288,7 @@ class webHackingMenu:
             "   {11}-BruteX - Automatically brute force all services running on a target")
         print("   {12}-Arachni - Web Application Security Scanner Framework \n ")
         print("   {99}-Back To Main Menu \n")
-        choiceweb = raw_input(fsocietyPrompt)
+        choiceweb = raw_input(MrF3RDIPrompt)
         clearScr()
         if choiceweb == "1":
             maine()
@@ -315,7 +315,7 @@ class webHackingMenu:
         elif choiceweb == "12":
             arachni()
         elif choiceweb == "99":
-            fsociety()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -360,7 +360,7 @@ class postExploitationMenu:
         print("   {2}--POET")
         print("   {3}--Phishing Framework \n")
         print("   {99}-Return to main menu \n ")
-        choice11 = raw_input(fsocietyPrompt)
+        choice11 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice11 == "1":
             sitechecker()
@@ -369,7 +369,7 @@ class postExploitationMenu:
         elif choice11 == "3":
             weeman()
         elif choice11 == "99":
-            fsociety()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -405,7 +405,7 @@ class informationGatheringMenu:
         print("  {7}--Doork")
         print("  {8}--Crips\n  ")
         print("  {99}-Back To Main Menu \n")
-        choice2 = raw_input(fsocietyPrompt)
+        choice2 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice2 == "1":
             nmap()
@@ -424,7 +424,7 @@ class informationGatheringMenu:
         elif choice2 == "8":
             crips()
         elif choice2 == "99":
-            fsociety()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -770,7 +770,7 @@ class passwordAttacksMenu:
         elif choice3 == "2":
             brutex()
         elif choice3 == "99":
-            fsociety()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -829,7 +829,7 @@ class wirelessTestingMenu:
         print("   {2}--pixiewps")
         print("   {3}--Bluetooth Honeypot GUI Framework \n")
         print("   {99}-Back To The Main Menu \n")
-        choice4 = raw_input(fsocietyPrompt)
+        choice4 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice4 == "1":
             reaver()
@@ -838,7 +838,7 @@ class wirelessTestingMenu:
         elif choice4 == "3":
             bluepot()
         elif choice4 == "99":
-            fsociety()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -947,7 +947,7 @@ class exploitationToolsMenu:
         print("   {8}--Bruteforce the Android Passcode given the hash and salt")
         print("   {9}--Joomla SQL injection Scanner \n ")
         print("   {99}-Go Back To Main Menu \n")
-        choice5 = raw_input(fsocietyPrompt)
+        choice5 = raw_input(MrF3RDIPrompt)
         clearScr()
         if choice5 == "1":
             atscan()
@@ -968,7 +968,7 @@ class exploitationToolsMenu:
         elif choice5 == "9":
             cmsfew()
         elif choice5 == "99":
-            fsociety()
+            MrF3RDI()
         else:
             self.__init__()
         self.completed()
@@ -1037,7 +1037,7 @@ def weeman():
         os.system(
             "git clone --depth=1 https://github.com/samyoyo/weeman.git && cd weeman && python weeman.py")
     else:
-        fsociety()
+        MrF3RDI()
 
 
 def gabriel():
@@ -1062,7 +1062,7 @@ def ifinurl():
     if cinurl in yes:
         inurl()
     else:
-        fsociety()
+        MrF3RDI()
 
 
 def bsqlbf():
@@ -1081,7 +1081,7 @@ def atscan():
         os.system(
             "git clone --depth=1 https://github.com/AlisamTechnology/ATSCAN.git && cd ATSCAN && perl atscan.pl")
     else:
-        fsociety()
+        MrF3RDI()
 
 
 def commix():
@@ -1140,7 +1140,7 @@ def jboss():
         os.system(
             "git clone --depth=1 https://github.com/SpiderLabs/jboss-autopwn.git"), sys.exit()
     else:
-        fsociety()
+        MrF3RDI()
 
 
 def wppluginscan():
@@ -1339,7 +1339,7 @@ def pisher():
     os.system("python pisher.py")
 
 
-menuu = fsocietylogo + '''
+menuu = MrF3RDIlogo + '''
 
    {1}--Get all websites
    {2}--Get joomla websites
@@ -1372,7 +1372,7 @@ class Fscan:
         self.getSites(False)
         print menuu
         while True:
-            choice = raw_input(fsocietyPrompt)
+            choice = raw_input(MrF3RDIPrompt)
             if choice == '1':
                 self.getSites(True)
             elif choice == '2':
@@ -1399,7 +1399,7 @@ class Fscan:
             elif choice == '12':
                 self.cloudflareBypasser()
             elif choice == '99':
-                fsociety()
+                MrF3RDI()
             con = raw_input(' Continue [Y/n] -> ')
             if con[0].upper() == 'N':
                 exit()
@@ -1827,7 +1827,7 @@ def maine():
         elif choose == "4":
             about()
         elif choose == "99":
-            fsociety()
+            MrF3RDI()
         else:
             maine()
 
@@ -2094,7 +2094,7 @@ def wpminiscanner():
 if __name__ == "__main__":
     try:
         agreement()
-        fsociety()
+        MrF3RDI()
     except KeyboardInterrupt:
         print(" Finishing up...\n")
         time.sleep(0.25)
