@@ -189,8 +189,7 @@ class MrF3RDI:
             except:
                 pass
 
-        self.completed()  # BURASI BURADAN KESİNLİKLE HİZALANMALI
-
+        self.completed()
 
     def githubContributors(self):
         clearScr()
