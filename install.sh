@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bash Script for install Mr.F3RDI tools
+# Bash Script for install MrF3RDI tools
 # Must run to install tool
 
 clear
@@ -20,19 +20,19 @@ echo "
 sudo chmod +x uninstall
 
 if [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
-    INSTALL_DIR="$PREFIX/usr/share/doc/Mr.F3RDI"
+    INSTALL_DIR="$PREFIX/usr/share/doc/MrF3RDI"
     BIN_DIR="$PREFIX/bin/"
     BASH_PATH="$PREFIX/bin/bash"
     TERMUX=true
 
     pkg install -y git python2
 elif [ "$(uname)" = "Darwin" ]; then
-    INSTALL_DIR="/usr/local/Mr.F3RDI"
+    INSTALL_DIR="/usr/local/MrF3RDI"
     BIN_DIR="/usr/local/bin/"
     BASH_PATH="/bin/bash"
     TERMUX=false
 else
-    INSTALL_DIR="$HOME/.Mr.F3RDI"
+    INSTALL_DIR="$HOME/.MrF3RDI"
     BIN_DIR="/usr/local/bin/"
     BASH_PATH="/bin/bash"
     TERMUX=false
@@ -42,15 +42,15 @@ fi
 
 echo "[✔] Checking directories...";
 if [ -d "$INSTALL_DIR" ]; then
-    echo "[◉] A directory Mr.F3RDI was found! Do you want to replace it? [Y/n]:" ;
+    echo "[◉] A directory MrF3RDI was found! Do you want to replace it? [Y/n]:" ;
     read -r mama
     if [ "$mama" = "y" ]; then
         if [ "$TERMUX" = true ]; then
             rm -rf "$INSTALL_DIR"
-            rm "$BIN_DIR/Mr.F3RDI*"
+            rm "$BIN_DIR/MrF3RDI*"
         else
             sudo rm -rf "$INSTALL_DIR"
-            sudo rm "$BIN_DIR/Mr.F3RDI*"
+            sudo rm "$BIN_DIR/MrF3RDI*"
         fi
     else
         echo "[✘] If you want to install you must remove previous installations [✘] ";
@@ -59,29 +59,29 @@ if [ -d "$INSTALL_DIR" ]; then
     fi
 fi
 echo "[✔] Cleaning up old directories...";
-if [ -d "$ETC_DIR/Mr.F3RDI" ]; then
+if [ -d "$ETC_DIR/MrF3RDI" ]; then
     echo "$DIR_FOUND_TEXT"
     if [ "$TERMUX" = true ]; then
-        rm -rf "$ETC_DIR/Mr.F3RDI"
+        rm -rf "$ETC_DIR/MrF3RDI"
     else
-        sudo rm -rf "$ETC_DIR/Mr.F3RDI"
+        sudo rm -rf "$ETC_DIR/MrF3RDI"
     fi
 fi
 
 echo "[✔] Installing ...";
 echo "";
-git clone --depth=1 https://github.com/Ferdibrgll/Mr.F3RDI "$INSTALL_DIR";
+git clone --depth=1 https://github.com/Ferdibrgll/MrF3RDI "$INSTALL_DIR";
 echo "#!$BASH_PATH
-python $INSTALL_DIR/Mr.F3RDI.py" "${1+"$@"}" > "$INSTALL_DIR/Mr.F3RDI";
-chmod +x "$INSTALL_DIR/Mr.F3RDI";
+python $INSTALL_DIR/MrF3RDI.py" "${1+"$@"}" > "$INSTALL_DIR/MrF3RDI";
+chmod +x "$INSTALL_DIR/MrF3RDI";
 if [ "$TERMUX" = true ]; then
-    cp "$INSTALL_DIR/Mr.F3RDI" "$BIN_DIR"
-    cp "$INSTALL_DIR/Mr.F3RDI.cfg" "$BIN_DIR"
+    cp "$INSTALL_DIR/MrF3RDI" "$BIN_DIR"
+    cp "$INSTALL_DIR/MrF3RDI.cfg" "$BIN_DIR"
 else
-    sudo cp "$INSTALL_DIR/Mr.F3RDI" "$BIN_DIR"
-    sudo cp "$INSTALL_DIR/Mr.F3RDI.cfg" "$BIN_DIR"
+    sudo cp "$INSTALL_DIR/MrF3RDI" "$BIN_DIR"
+    sudo cp "$INSTALL_DIR/MrF3RDI.cfg" "$BIN_DIR"
 fi
-rm "$INSTALL_DIR/Mr.F3RDI";
+rm "$INSTALL_DIR/MrF3RDI";
 
 
 if [ -d "$INSTALL_DIR" ] ;
@@ -90,7 +90,7 @@ then
     echo "[✔] Tool installed successfully! [✔]";
     echo "";
     echo "[✔]====================================================================[✔]";
-    echo "[✔]      All is done!! You can execute tool by typing Mr.F3RDI !       [✔]";
+    echo "[✔]      All is done!! You can execute tool by typing MrF3RDI !       [✔]";
     echo "[✔]====================================================================[✔]";
     echo "";
 else

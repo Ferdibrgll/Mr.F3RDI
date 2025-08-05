@@ -1,22 +1,22 @@
 #!/bin/bash
-# Mr.F3RDI tool uninstall script
+# MrF3RDI tool uninstall script
 # Developed by Ferdi Birgül
 # GitHub: https://github.com/Ferdibrgll
 clear
 echo ""
 
 if [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
-    INSTALL_DIR="$PREFIX/usr/share/doc/Mr.F3RDI"
+    INSTALL_DIR="$PREFIX/usr/share/doc/MrF3RDI"
     BIN_DIR="$PREFIX/bin/"
     BASH_PATH="$PREFIX/bin/bash"
     TERMUX=true
 elif [ "$(uname)" = "Darwin" ]; then
-    INSTALL_DIR="/usr/local/Mr.F3RDI"
+    INSTALL_DIR="/usr/local/MrF3RDI"
     BIN_DIR="/usr/local/bin/"
     BASH_PATH="/bin/bash"
     TERMUX=false
 else
-    INSTALL_DIR="$HOME/.Mr.F3RDI"
+    INSTALL_DIR="$HOME/.MrF3RDI"
     BIN_DIR="/usr/local/bin/"
     BASH_PATH="/bin/bash"
     TERMUX=false
@@ -27,10 +27,10 @@ echo "[✔] Checking directories..."
 if [ -d "$INSTALL_DIR" ]; then
     if [ "$TERMUX" = true ]; then
         rm -rf "$INSTALL_DIR"
-        rm -f "$BIN_DIR/Mr.F3RDI*"
+        rm -f "$BIN_DIR/MrF3RDI*"
     else
         sudo rm -rf "$INSTALL_DIR"
-        sudo rm -f "$BIN_DIR/Mr.F3RDI*"
+        sudo rm -f "$BIN_DIR/MrF3RDI*"
     fi
     echo "[✔] Removed installation directories."
 else
@@ -45,11 +45,11 @@ echo "[✔] Cleaning up old directories..."
 
 # Eğer böyle bir klasör kullanmıyorsak bunu tamamen çıkarabiliriz
 # Aşağıdaki satırları kaldırdım çünkü ETC_DIR tanımlı değil:
-# if [ -d "$ETC_DIR/Mr.F3RDI" ]; then
+# if [ -d "$ETC_DIR/MrF3RDI" ]; then
 #     if [ "$TERMUX" = true ]; then
-#         rm -rf "$ETC_DIR/Mr.F3RDI"
+#         rm -rf "$ETC_DIR/MrF3RDI"
 #     else
-#         sudo rm -rf "$ETC_DIR/Mr.F3RDI"
+#         sudo rm -rf "$ETC_DIR/MrF3RDI"
 #     fi
 # fi
 

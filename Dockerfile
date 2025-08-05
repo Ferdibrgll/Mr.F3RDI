@@ -9,14 +9,14 @@ RUN apt-get update \
 # Install Python dependecies
 RUN pip install requests
 
-# Install Mr.F3RDI
-RUN git clone https://github.com/Ferdibrgll/Mr.F3RDI \
-  && cd Mr.F3RDI \
+# Install MrF3RDI
+RUN git clone https://github.com/Ferdibrgll/MrF3RDI \
+  && cd MrF3RDI \
   && chmod +x install.sh \
   && ./install.sh
 
 # Change workdir
-WORKDIR /root/.Mr.F3RDI/
+WORKDIR /root/.MrF3RDI/
 
 # Hack to keep the container running
 CMD python -c "import signal; signal.pause()"
